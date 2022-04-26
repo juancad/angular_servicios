@@ -16,7 +16,7 @@ https://juancad.github.io/angular_servicios/
 
 Se trata de una aplicación para un bloc de notas, en el que se pueden añadir notas a una lista de notas y, posteriormente, marcar las notas como realizadas.
 
-![image](https://user-images.githubusercontent.com/91132611/165274576-02585d90-7427-4abb-bb7f-6de93420be0b.png)
+![services](https://user-images.githubusercontent.com/91132611/165403194-e832b0df-5d22-48ed-8512-beef6aaf48fa.png)
 
 ## 3. Descripción del trabajo realizado <a name="descripcion"/>
 
