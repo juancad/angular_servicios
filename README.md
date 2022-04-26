@@ -21,7 +21,9 @@ Se trata de una aplicación para un bloc de notas, en el que se pueden añadir n
 ## 3. Descripción del trabajo realizado <a name="descripcion"/>
 
 Se ha creado el componente padre "notes", que transmite información al componente hijo "list". También se ha creado un componente para poder marcar las notas, llamado "notemark".
-notemark me permite marcar una nota como completada o no, en una nota marcada aparecerá un ✓.
+
+"notemark" me permite marcar una nota como completada o no, en una nota marcada aparecerá un ✓.
+
 El modelo nota contiene los atributos: titulo, contenido, color y fecha. 
 - titulo es una cadena de caracteres, donde se indicará el título de la nota.
 - contenido es una cadena de caracteres, donde se indicará contenido de la nota.
