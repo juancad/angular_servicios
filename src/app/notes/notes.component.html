@@ -1,35 +1,34 @@
-  <div class="notes">
-  <div class="container">
+<div class="notes">
+  <div class="appForm">
+    <h2>{{title}}</h2>
+    <br>
+    <form class="form-group row">
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Titulo</mat-label>
+        <input matInput type="text" name="titulo" [(ngModel)]="boxTitulo">
+      </mat-form-field>
 
-      <div class="col"><h2>{{title}}</h2></div>
-      <form class="form-group row">
-    
-        <div class="form-group col-md-3">
-          <label for="titulo">Título: </label>
-          <input type="text" name="titulo" id="titulo" placeholder="Titulo" class="form-control" [(ngModel)]="boxTitulo">
-        </div>
-    
-        <div class="form-group col-md-3">
-          <label for="contenido">Contenido: </label>
-          <input type="textarea" name="contenido" id="contenido" placeholder="Contenido" class="form-control" [(ngModel)]="boxContenido">
-        </div>
-    
-        <div class="form-group col-md-3">
-          <label for="color">Color: </label>
-          <select name ="color" [(ngModel)]="boxColor"><option value="lightpink">lightpink</option>
-            <option value=lightgreen>lightgreen</option>
-            <option value="lightyellow">lightyellow</option>
-            <option value="lightcyan">lightcyan</option>
-            <option value="lightgrey">lightgrey</option></select>
-        </div>
-    
-        <div class="row">
-          <button type="submit" class="btn btn-primary  btn-sm" (click)="altaNota()">Añadir nota</button>
-        </div>
-    
-      </form>
-    </div>
-    <br><br>
-    
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Contenido</mat-label>
+        <textarea matInput name="contenido" [(ngModel)]="boxContenido"></textarea>
+      </mat-form-field>
+
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Elige un color</mat-label>
+        <mat-select name ="color" [(ngModel)]="boxColor"> 
+          <mat-option value="lightgreen">lightgreen</mat-option>
+          <mat-option value="lightyellow">lightyellow</mat-option>
+          <mat-option value="lightcyan">lightcyan</mat-option>
+          <mat-option value="lightgrey">lightgrey</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <section>
+        <button type="submit" mat-mini-fab color="primary" (click)="altaNota()">+</button>
+      </section>
+    </form>
+  </div>
+  <br> <br>
+  <div class="appNotes">
     <app-list *ngFor="let nota of notas; let i=index" [notaList]="nota" [indexList]="i"></app-list>
+  </div>
 </div>

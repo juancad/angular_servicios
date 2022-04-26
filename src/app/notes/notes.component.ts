@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { Nota } from "./../nota.model";
 import { DatosServicio } from './../datos.service';
+import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-notes',
   templateUrl: './notes.component.html',
   styleUrls: ['./notes.component.css']
 })
+
 export class NotesComponent implements OnInit {
 
   title = "Crear una nota";
@@ -28,8 +30,8 @@ export class NotesComponent implements OnInit {
   boxColor:string="lightyellow";
 
   ngOnInit(): void {
-
     this.notas=this.notaServicio.notas;
-
   }
 }
+
+export class ButtonOverviewExample {}

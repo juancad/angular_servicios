@@ -11,3 +11,9 @@ input.largerCheckbox {
     width: 15px;
     height: 15px;
 }
+
+button, a {
+  margin-right: 5px;
+  padding: 0px;
+  line-height: 20px;
+}

@@ -21,5 +21,4 @@ export class NotemarkComponent implements OnInit {
   addnewMark(value: boolean){
     this.newMarkEvent.emit(value);
   }
-
 }

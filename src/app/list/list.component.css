@@ -6,16 +6,10 @@ span.verified {
     border-radius: 100%;
 }
 
-.container {
-    color: black;
-    max-width: 500px;
-    margin: auto;
-}
-
 .noteTitle {
     font-size: 15px;
     padding: 5px;
-    border-bottom: 1px dashed black;
+    border-bottom: 1px solid black;
 }
 
 .noteContent {
@@ -25,5 +19,9 @@ span.verified {
 
 .noteDate {
     font-size: 9px;
+    padding: 5px;
+}
+
+.noteCheck {
     padding: 5px;
 }
