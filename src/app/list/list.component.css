@@ -1,0 +1,29 @@
+span.verified {
+    background: green;
+    color: white;
+    font-weight: bold;
+    padding: 1px 4px 1px 4px;
+    border-radius: 100%;
+}
+
+.container {
+    color: black;
+    max-width: 500px;
+    margin: auto;
+}
+
+.noteTitle {
+    font-size: 15px;
+    padding: 5px;
+    border-bottom: 1px dashed black;
+}
+
+.noteContent {
+    font-size: 13px;
+    padding: 5px;
+}
+
+.noteDate {
+    font-size: 9px;
+    padding: 5px;
+}

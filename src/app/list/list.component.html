@@ -1,0 +1,16 @@
+<div class="container" style="background-color: {{notaList.color}}">
+  <div class="row">
+    <div class="col">
+      <div>
+        <div class="noteTitle">
+          <ng-template [ngIf]=mark><span class="verified">✓</span></ng-template> {{indexList+1}}. {{notaList.titulo | uppercase}}
+        </div>
+        <div class="noteContent">
+          {{notaList.contenido}}
+        </div>
+        <div class="noteDate">{{notaList.fecha}}</div>
+        <div class="noteCheck"><app-notemark (newMarkEvent)="addMark($event)"></app-notemark></div>
+      </div>
+    </div>
+  </div>
+</div><br/>
