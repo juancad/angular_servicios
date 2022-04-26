@@ -31,3 +31,4 @@ El modelo nota contiene los atributos: titulo, contenido, color y fecha:
 - fecha contendrá la fecha en que fue creada la nota.
 
 Al añadir una nota, será añadida a una lista de notas. El componente hijo recibe las notas de esta lista.
+Para el diseño del formulario se ha utilizado [angular material](https://material.angular.io/).
