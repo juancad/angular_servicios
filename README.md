@@ -24,7 +24,7 @@ Se ha creado el componente padre "notes", que transmite información al componen
 
 "notemark" me permite marcar una nota como completada o no, en una nota marcada aparecerá un ✓.
 
-El modelo nota contiene los atributos: titulo, contenido, color y fecha. 
+El modelo nota contiene los atributos: titulo, contenido, color y fecha:
 - titulo es una cadena de caracteres, donde se indicará el título de la nota.
 - contenido es una cadena de caracteres, donde se indicará contenido de la nota.
 - color es una cadena de caracteres, que contendrá el color de fondo de la nota. En el formulario se han establecido los colores disponibles.
