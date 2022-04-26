@@ -1,27 +1,33 @@
-# AngularServices
+# Angular servicios
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
+## Contenidos 
+1. [Introducción](#intro)
+  1.1. [Link web](#link-web) 
+3. [Visualización](#visualizacion)
+4. [Descripción del trabajo realizado](#descripcion)
 
-## Development server
+### 1. Introducción
+Se trata de realizar una aplicación en angular en el que haya comunicación entre componentes padres e hijos. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### 1.1 Link web <a name="link-web"/>
+https://juancad.github.io/angular_servicios/
 
-## Code scaffolding
+## 2. Visualización <a name="visualizacion"/>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Se trata de una aplicación para un bloc de notas, en el que se pueden añadir notas a una lista de notas y, posteriormente, marcar las notas como realizadas.
 
-## Build
+![image](https://user-images.githubusercontent.com/91132611/165274576-02585d90-7427-4abb-bb7f-6de93420be0b.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 3. Descripción del trabajo realizado <a name="descripcion"/>
 
-## Running unit tests
+Se ha creado el componente padre "notes", que transmite información al componente hijo "list". También se ha creado un componente para poder marcar las notas, llamado "notemark".
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+"notemark" me permite marcar una nota como completada o no, en una nota marcada aparecerá un ✓.
 
-## Running end-to-end tests
+El modelo nota contiene los atributos: titulo, contenido, color y fecha:
+- titulo es una cadena de caracteres, donde se indicará el título de la nota.
+- contenido es una cadena de caracteres, donde se indicará contenido de la nota.
+- color es una cadena de caracteres, que contendrá el color de fondo de la nota. En el formulario se han establecido los colores disponibles.
+- fecha contendrá la fecha en que fue creada la nota.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Al añadir una nota, será añadida a una lista de notas. El componente hijo recibe las notas de esta lista.
